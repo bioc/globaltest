@@ -29,7 +29,7 @@ covariates <- function(object,
   
   # prepare alias
   if (!is.null(alias)) {
-    if (is.environment(alias)) alias <- as.list(alias)
+    if (is.environment(alias) || is(alias, "AnnDbBimap")) alias <- as.list(alias)
     if (is.list(alias)) alias <- unlist(alias)
     if (length(alias) == object@functions$df()[3] && is.null(names(alias))) 
       names(alias) <- object@functions$cov.names()

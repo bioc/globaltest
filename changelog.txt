@@ -1,3 +1,6 @@
+5.0.1
+- repaired a bug in features() that sometimes produced wrong gene symbols in the plot.
+
 4.9.12
 - removed leftover debugging print command in .genF
 - .calculateP() now uses F distribution rather than Imhof if possible
