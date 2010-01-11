@@ -1,3 +1,6 @@
+5.0.2
+- superfluous transpose leading to error in cox model with covariates fixed
+
 5.0.1
 - repaired a bug in features() that sometimes produced wrong gene symbols in the plot.
 
