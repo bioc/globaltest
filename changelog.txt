@@ -1,3 +1,7 @@
+5.8.1
+- repaired sorting and coloring of bars in covariates(..., cluster=FALSE, sort=TRUE)
+ 
+
 5.7.4
 - rewritten goodnessoffit.R function
 - replaced gtPS, gtK, gtI, repdes, getPS, getK with gtPS, gtKS, gtLI, btensor, reparamZ, reweighZ in NAMESPACE/export 

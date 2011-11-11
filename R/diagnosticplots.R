@@ -238,6 +238,7 @@ covariates <- function(object,
       sorter <- sort.list(order.bars) 
       if (zoom) obj <- p.adjust(obj, "holm")
       obj <- obj[sorter]
+      bars <- bars[sorter]
       if (trace)
         cat("\n")
     }
