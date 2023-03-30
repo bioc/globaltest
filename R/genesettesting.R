@@ -193,7 +193,7 @@ gtKEGG <- function(response, exprs, ..., id, annotation, probe2entrez,
   
   # add names
   KEGGNAMES <- KEGGREST::keggList("pathway")
-  names(KEGGNAMES) <- gsub("path:map", "", names(KEGGNAMES))
+  names(KEGGNAMES) <- gsub("map", "", names(KEGGNAMES))
   
   alias(res) <- KEGGNAMES[names(res)]
   alias(res)[is.na(alias(res))] <- ""
